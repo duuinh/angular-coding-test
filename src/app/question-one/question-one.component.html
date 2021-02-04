@@ -1,0 +1,12 @@
+<div class="container">
+  <div id="col-1">
+    <input type="number" [(ngModel)]="number" (ngModelChange)="calculate()">
+  </div>
+  <div id="col-2">
+    <select [(ngModel)]="option" (ngModelChange)="calculate()">
+      <option value="isPrime">isPrime</option>
+      <option value="isFibonacci">isFibonacci</option>
+    </select>
+  </div>
+  <div id="col-3">{{output}}</div>
+</div>
